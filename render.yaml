@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: link-lock
+    env: node
+    branch: main
+    buildCommand: cd link-lock && npm install
+    startCommand: cd link-lock && npm start
+    autoDeploy: true
+    plan: free

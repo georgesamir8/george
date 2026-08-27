@@ -23,3 +23,11 @@ Possible improvements
 - Add expiration for links
 - Add optional one-time use
 - Add admin interface to list/delete links
+
+---
+
+Deploy to Render (one-click)
+
+Click the link below to deploy this repository to Render. You will be asked to sign in to Render and grant access to this GitHub repository. In the Render dashboard choose "Web Service" and the service defined in `render.yaml` will be picked up automatically.
+
+- Deploy to Render: https://dashboard.render.com/new?repo=https://github.com/georgesamir8/george
