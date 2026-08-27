@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create link - link-lock</title>
+  <link rel="stylesheet" href="/public/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Create a locked link</h1>
+    <% if (error) { %>
+      <div class="error"><%= error %></div>
+    <% } %>
+    <form method="post" action="/create">
+      <label>Target URL<br /><input type="url" name="url" required value="<%= values.url || '' %>" /></label>
+      <label>Password<br /><input type="password" name="password" required /></label>
+      <label>Hint (optional)<br /><input type="text" name="hint" value="<%= values.hint || '' %>" /></label>
+      <button>Create</button>
+    </form>
+  </main>
+</body>
+</html>
